@@ -1,0 +1,23 @@
+{
+  "version": "pop.v1",
+  "id": "pop_rejected_001",
+  "status": "rejected",
+  "payer": { "kind": "organization", "id": "org_microcosm_demo" },
+  "payee": { "kind": "agent", "id": "agent_market_researcher" },
+  "terms": {
+    "amount": "20.00",
+    "asset": "USDC",
+    "network": "arc-testnet",
+    "reason": "Market agent bankroll request"
+  },
+  "intent": {
+    "intentId": "req_market_agent_001",
+    "intentHash": "0xe3d810c88443abc61bee60f482f0b7189bb63b216ba4353495e709b75ef75d25"
+  },
+  "rejection": {
+    "reason": "Requested stake exceeds the policy envelope.",
+    "rejectionHash": "0x8888888888888888888888888888888888888888888888888888888888888888"
+  },
+  "createdAt": "2026-05-23T00:00:00.000Z",
+  "updatedAt": "2026-05-23T00:00:00.000Z"
+}

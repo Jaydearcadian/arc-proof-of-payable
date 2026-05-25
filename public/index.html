@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arc Proof of Payable</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Arc OSS Primitive</p>
+        <h1>Proof of Payable</h1>
+        <p>Compose intent, policy, and escrow or settlement evidence into a portable payable proof for Arc builders.</p>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <label for="status">Lifecycle</label>
+          <select id="status">
+            <option value="proposed">Proposed</option>
+            <option value="policy_approved">Policy approved</option>
+            <option value="funded">Funded</option>
+            <option value="escrowed" selected>Escrowed</option>
+            <option value="settled">Settled</option>
+            <option value="rejected">Rejected</option>
+            <option value="disputed">Disputed</option>
+          </select>
+          <button id="compose" type="button">Compose proof</button>
+          <button id="verify" type="button">Verify proof</button>
+          <button id="finance" type="button">Assess financeability</button>
+        </article>
+
+        <article class="panel">
+          <h2>Result</h2>
+          <pre id="result">Choose a lifecycle and compose a Proof of Payable.</pre>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Proof JSON</h2>
+        <pre id="proof">No proof composed yet.</pre>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
